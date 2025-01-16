@@ -1,4 +1,5 @@
 -ad-manager/$~stylesheet
+-ads-manager/$~stylesheet
 ad.mail.ru^$~image,domain=~mail.ru|sportmail.ru
 ad-choices-$image
 kaprila.com/$domain=~wordpress.org

@@ -16,7 +16,7 @@ $content = explode(PHP_EOL, $content);
 $jsonItems = [];
 for ($i = 0; $i < count($content); $i++) {
     $line = trim($content[$i]);
-    
+
     // Skip comments and empty lines
     if ($line === '' || strpos($line, '!') === 0 || strpos($line, '[') === 0) {
         continue;
@@ -70,16 +70,16 @@ for ($i = 0; $i < count($content); $i++) {
     ];
 
     if (preg_match('/^-/', $content[0])) {
-      $jsonItem = [
-        "id" => $i + 1, // Adjust ID to start from 1
-        "priority" => 1,
-        "action" => [
-            "type" => "block"
-        ],
-        "condition" => [
-            "urlFilter" => "*://*" . $urlFilter . "*",
-        ]
-    ];
+        $jsonItem = [
+            "id" => $i + 1, // Adjust ID to start from 1
+            "priority" => 1,
+            "action" => [
+                "type" => "block"
+            ],
+            "condition" => [
+                "urlFilter" => "/*" . $urlFilter . "*"
+            ]
+        ];
     }
 
     // Add resourceTypes if not empty

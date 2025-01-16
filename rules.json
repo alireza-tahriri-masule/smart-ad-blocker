@@ -6,7 +6,7 @@
             "type": "block"
         },
         "condition": {
-            "urlFilter": "*:\/\/*.*-ad-manager\/*",
+            "urlFilter": "\/*-ad-manager\/*",
             "resourceTypes": [
                 "stylesheet"
             ]
@@ -19,13 +19,9 @@
             "type": "block"
         },
         "condition": {
-            "urlFilter": "*:\/\/*.*ad.mail.ru^*",
+            "urlFilter": "\/*-ads-manager\/*",
             "resourceTypes": [
-                "image"
-            ],
-            "excludedDomains": [
-                "mail.ru",
-                "sportmail.ru"
+                "stylesheet"
             ]
         }
     },
@@ -36,9 +32,13 @@
             "type": "block"
         },
         "condition": {
-            "urlFilter": "*:\/\/*.*ad-choices-*",
+            "urlFilter": "\/*ad.mail.ru^*",
             "resourceTypes": [
                 "image"
+            ],
+            "excludedDomains": [
+                "mail.ru",
+                "sportmail.ru"
             ]
         }
     },
@@ -49,9 +49,9 @@
             "type": "block"
         },
         "condition": {
-            "urlFilter": "*:\/\/*.*kaprila.com\/*",
-            "excludedDomains": [
-                "wordpress.org"
+            "urlFilter": "\/*ad-choices-*",
+            "resourceTypes": [
+                "image"
             ]
         }
     },
@@ -62,7 +62,10 @@
             "type": "block"
         },
         "condition": {
-            "urlFilter": "*:\/\/*.*yektanet.com*"
+            "urlFilter": "\/*kaprila.com\/*",
+            "excludedDomains": [
+                "wordpress.org"
+            ]
         }
     },
     {
@@ -72,7 +75,7 @@
             "type": "block"
         },
         "condition": {
-            "urlFilter": "*:\/\/*.*soft98.ir*"
+            "urlFilter": "\/*yektanet.com*"
         }
     },
     {
@@ -82,7 +85,7 @@
             "type": "block"
         },
         "condition": {
-            "urlFilter": "*:\/\/*.*tavoos.net*"
+            "urlFilter": "\/*soft98.ir*"
         }
     },
     {
@@ -92,7 +95,17 @@
             "type": "block"
         },
         "condition": {
-            "urlFilter": "*:\/\/*.*360playvid.com^*"
+            "urlFilter": "\/*tavoos.net*"
+        }
+    },
+    {
+        "id": 9,
+        "priority": 1,
+        "action": {
+            "type": "block"
+        },
+        "condition": {
+            "urlFilter": "\/*360playvid.com^*"
         }
     }
 ]
