@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "Smart Ad Blocker",
+  "version": "1.0.0",
+  "description": "A powerful ad blocker with features like YouTube ad skipping and custom rule support.",
+  "permissions": [
+    "declarativeNetRequest",
+    "declarativeNetRequestWithHostAccess",
+    "activeTab"
+  ],
+  "host_permissions": ["<all_urls>"],
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "ruleset_1",
+        "enabled": true,
+        "path": "rules.json"
+      }
+    ]
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "Smart Ad Blocker Active"
+  }
+}
