@@ -77,7 +77,7 @@ for ($i = 0; $i < count($content); $i++) {
             "type" => "block"
         ],
         "condition" => [
-            "urlFilter" => "*://*.*" . $urlFilter . "*",
+            "urlFilter" => "*://*" . $urlFilter . "*",
         ]
     ];
     }
